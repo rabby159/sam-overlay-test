@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="navbar pr-10 font-bold absolute">
+      <div className="navbar pr-10 font-bold">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -59,7 +59,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="navbar-end hidden lg:flex uppercase">
-          <ul className=" flex gap-10 px-1 text-xl text-white ">{navLink}</ul>
+          <ul className=" flex gap-10 px-1 text-xl ">{navLink}</ul>
           <div className="ml-16">
             <p className="text-center">Comms: <span className="text-red-600">closed</span></p>
             <a className="btn  text-xl">Come Back Later</a>
