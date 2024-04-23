@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
 
     <>
-    <div className="px-20 navbar-gradient">
+    <div className="px-17 navbar-gradient">
       <div className="navbar  font-extrabold">
         <div className="navbar-start">
           <div className="dropdown">
@@ -64,10 +64,10 @@ const Navbar = () => {
           </div>
         </div>
         <div className="navbar-end hidden lg:flex uppercase">
-          <ul className="flex gap-10 px-1 text-white">
+          <ul className="flex gap-8 px-1 text-white">
             {navLink}
             </ul>
-          <div className="pl-5">
+          <div className="pl-3">
             <p className="text-center text-white mb-3">Comms: <span className="text-red-600">Open!</span></p>
             <a className="text-l bg-sky-400 p-3 rounded-md">Order Here</a>
           </div>
