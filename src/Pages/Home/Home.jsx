@@ -2,10 +2,12 @@ import Footer from "../../Shared/Footer";
 import Navbar from "../../Shared/Navbar";
 import Banner from "./Banner";
 
+// import Bg from "../../Shared/bg";
+
 
 const Home = () => {
     return (
-        <div className="bg-slate-800">
+        <div>
             <Navbar></Navbar>
             <Banner></Banner>
             <Footer></Footer>

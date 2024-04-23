@@ -1,12 +1,24 @@
-.drop-filter{
-    filter: drop-shadow(0 0 8px #F7C250);
-}
 
 .drop-filter:hover {
-    filter: drop-shadow(0 0 12px #F7C250) drop-shadow(0 0 24px #F7C250);
+    filter: drop-shadow(0 0 12px #6e86f1) drop-shadow(0 0 24px #6e86f1);
 }
 
-.nav-selected {
-    color: #fc719d;
-    filter: drop-shadow(0 0 8px #F7C250);
+.navigation-item {
+    /* margin: 0 24px; */
+    font-size: 20px;
+    letter-spacing: .3rem;
+    cursor: pointer;
+}
+
+.filter-transition {
+    transition: filter .2s ease-in-out;
+}
+
+.navbar-gradient {
+    z-index: 1;
+    position: absolute;
+    height: 12rem;
+    width: 100%;
+    overflow-block: hidden;
+    background: linear-gradient(to bottom, #151421 28%, rgba(21, 20, 33, .75) 60%, rgba(21, 20, 33, 0) 100%) !important;
 }

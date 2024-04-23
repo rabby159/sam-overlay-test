@@ -1,32 +1,34 @@
 import "./navbarLogo.css";
-import navbarLogoMP4 from "../assets/Animation - 1704187235903.webm";
+import navbarLogoMP4 from "../assets/logo.webm";
 import { NavLink } from "react-router-dom";
 import './Navbar.css';
 
 const Navbar = () => {
   const navLink = (
     <>
-      <li>
-        <NavLink className={'drop-filter'} to={"/"}>Home</NavLink>
+      <li className="navigation-item filter-transition drop-filter">
+        <NavLink to={"/"}>Home</NavLink>
       </li>
-      <li>
+      <li className="navigation-item filter-transition drop-filter">
         <NavLink to={"/services"}>Services</NavLink>
       </li>
-      <li>
+      <li className="navigation-item filter-transition drop-filter">
         <NavLink to={"/portfolio"}>Portfolio</NavLink>
       </li>
-      <li>
+      <li className="navigation-item filter-transition drop-filter">
         <NavLink to={"/tos"}>Tos</NavLink>
       </li>
-      <li>
+      <li className="navigation-item filter-transition drop-filter">
         <NavLink to={"/contact"}>Contact</NavLink>
       </li>
     </>
   );
 
   return (
-    <div>
-      <div className="navbar pr-10 font-bold">
+
+    <>
+    <div className="px-20 navbar-gradient">
+      <div className="navbar  font-extrabold">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -52,21 +54,27 @@ const Navbar = () => {
               {navLink}
             </ul>
           </div>
-          <div className="video-logo-container">
-            <video autoPlay muted loop>
+          {/* <div>
+            <p>Hello</p>
+          </div> */}
+          <div className="w-[30rem]">
+            <video autoPlay muted loop >
               <source src={navbarLogoMP4} type="video/webm" />
             </video>
           </div>
         </div>
         <div className="navbar-end hidden lg:flex uppercase">
-          <ul className=" flex gap-10 px-1 text-xl text-white">{navLink}</ul>
-          <div className="ml-16">
-            <p className="text-center">Comms: <span className="text-red-600">closed</span></p>
-            <a className="btn  text-xl">Come Back Later</a>
+          <ul className="flex gap-10 px-1 text-white">
+            {navLink}
+            </ul>
+          <div className="pl-5">
+            <p className="text-center text-white mb-3">Comms: <span className="text-red-600">Open!</span></p>
+            <a className="text-l bg-sky-400 p-3 rounded-md">Order Here</a>
           </div>
         </div>
       </div>
     </div>
+    </>
   );
 };
 
