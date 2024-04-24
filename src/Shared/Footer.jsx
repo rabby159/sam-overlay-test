@@ -14,14 +14,17 @@ const Footer = () => {
           </ul>
         </nav>
         <nav className='flex justify-center'>
-          <div>
-              <video autoPlay muted loop className='lg:w-[15rem]'>
-                <source src={logo} type="video/webm" />
-              </video>
-              <p className='tracking-widest'>&copy; Reed Overlay, 2021 - 2024 All rights reserved</p>
-          </div>
+              <div>
+                <div className='lg:w-[15rem] lg:ml-24'>
+                  <video autoPlay muted loop >
+                    <source src={logo} type="video/webm" />
+                  </video>
+                </div>
+                  <p className='tracking-widest'>&copy; Reed Overlay, 2021 - 2024 All rights reserved</p>
+              </div>
+              
         </nav>
-        <nav className='text-right'>
+        <nav className='lg:text-right'>
           <header className="footer-title tracking-widest">Legal</header>
           <ul>
             <li className="link link-hover">Terms of use</li>
