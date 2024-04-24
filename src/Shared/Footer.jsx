@@ -3,27 +3,31 @@ import logo from '../assets/logo.webm'
 const Footer = () => {
   return (
     <div className='bg-neutral'>
-      <footer className="footer p-5 lg:p-10 text-neutral-content max-w-screen-xl mx-auto">
+      <footer className=" p-5 lg:p-10 text-neutral-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center">
         <nav>
           <header className="footer-title tracking-widest">Services</header>
-          <a className="link link-hover">Branding</a>
-          <a className="link link-hover">Design</a>
-          <a className="link link-hover">Marketing</a>
-          <a className="link link-hover">Advertisement</a>
+          <ul>
+            <li className="link link-hover">Branding</li>
+            <li className="link link-hover">Design</li>
+            <li className="link link-hover">Marketing</li>
+            <li className="link link-hover">Advertisement</li>
+          </ul>
         </nav>
-        <nav className=''>
-          <div className='lg:w-[15rem]'>
-              <video autoPlay muted loop >
+        <nav className='flex justify-center'>
+          <div>
+              <video autoPlay muted loop className='lg:w-[15rem]'>
                 <source src={logo} type="video/webm" />
               </video>
               <p className='tracking-widest'>&copy; Reed Overlay, 2021 - 2024 All rights reserved</p>
           </div>
         </nav>
-        <nav>
+        <nav className='text-right'>
           <header className="footer-title tracking-widest">Legal</header>
-          <a className="link link-hover">Terms of use</a>
-          <a className="link link-hover">Privacy policy</a>
-          <a className="link link-hover">Cookie policy</a>
+          <ul>
+            <li className="link link-hover">Terms of use</li>
+            <li className="link link-hover">Privacy policy</li>
+            <li className="link link-hover">Cookie policy</li>
+          </ul>
         </nav>
       </footer>
     </div>
