@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
 
     <>
-    <div className="px-17 navbar-gradient">
+    <div className="px-17  navbar-gradient">
       <div className="navbar  font-extrabold">
         <div className="navbar-start">
           <div className="dropdown">

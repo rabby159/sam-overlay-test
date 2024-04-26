@@ -19,6 +19,6 @@
     position: absolute;
     height: 12rem;
     width: 100%;
-    overflow-block: hidden;
+    /* overflow-block: hidden; */
     background: linear-gradient(to bottom, #151421 28%, rgba(21, 20, 33, .75) 60%, rgba(21, 20, 33, 0) 100%) !important;
 }
