@@ -1,5 +1,5 @@
-import bgVideo from '../../assets/BRB.webm'
-
+import bgVideo from '../../assets/BRB.webm';
+import './Banner.css';
 
 const Banner = () => {
     return (
@@ -12,8 +12,8 @@ const Banner = () => {
                 </video>
             </div>
             <div className='lg:absolute lg:p-36 lg:mt-40 lg:ml-96  justify-center hidden lg:block'>
-                <p className='lg:text-6xl text-center text-white'>Hey, I am <span className='text-cyan-400'>Reed!</span></p>
-                <p className='text-sm lg:text-2xl mx-10 text-center mt-5 tracking-widest '>I am a full-time freelance designer from Bangladesh. <br /> I am specialized in VTuber Graphics.</p>
+                <p className='lg:text-6xl text-center text-white shadowT'>Hey, I am <span className='text-cyan-400'>Reed!</span></p>
+                <p className='text-sm lg:text-2xl mx-10 text-center mt-5 tracking-widest text-white'>I am a full-time freelance designer from Bangladesh. <br /> I am specialized in VTuber Graphics.</p>
             </div>
         </div>
         </>
