@@ -10,15 +10,6 @@
     cursor: pointer;
 }
 
-.filter-transition {
-    transition: filter .2s ease-in-out;
-}
-
 .navbar-gradient {
-    z-index: 1;
-    position: absolute;
-    height: 12rem;
-    width: 100%;
-    /* overflow-block: hidden; */
-    background: linear-gradient(to bottom, #151421 28%, rgba(21, 20, 33, .75) 60%, rgba(21, 20, 33, 0) 100%) !important;
+    background: linear-gradient(to bottom, #151421 28%, rgba(21, 20, 33, 0.75) 60%, rgba(21, 20, 33, 0) 100%) !important;
 }

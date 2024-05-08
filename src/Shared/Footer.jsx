@@ -15,7 +15,7 @@ const Footer = () => {
         </nav>
         <nav className='flex justify-center'>
               <div>
-                <div className='lg:w-[15rem] lg:ml-24'>
+                <div className='w-40 lg:w-[15rem] lg:ml-24'>
                   <video autoPlay muted loop >
                     <source src={logo} type="video/webm" />
                   </video>

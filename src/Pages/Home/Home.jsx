@@ -2,8 +2,6 @@ import Footer from "../../Shared/Footer";
 import Navbar from "../../Shared/Navbar";
 import Banner from "./Banner";
 
-// import Bg from "../../Shared/bg";
-
 
 const Home = () => {
     return (

@@ -6,19 +6,19 @@ import './Navbar.css';
 const Navbar = () => {
   const navLink = (
     <>
-      <li className="navigation-item filter-transition drop-filter">
+      <li className="navigation-item ease-in-out duration-300 drop-filter">
         <NavLink to={"/"}>Home</NavLink>
       </li>
-      <li className="navigation-item filter-transition drop-filter">
+      <li className="navigation-item ease-in-out duration-300 drop-filter">
         <NavLink to={"/services"}>Services</NavLink>
       </li>
-      <li className="navigation-item filter-transition drop-filter">
+      <li className="navigation-item ease-in-out duration-300 drop-filter">
         <NavLink to={"/portfolio"}>Portfolio</NavLink>
       </li>
-      <li className="navigation-item filter-transition drop-filter">
+      <li className="navigation-item  ease-in-out duration-300 drop-filter">
         <NavLink to={"/tos"}>Tos</NavLink>
       </li>
-      <li className="navigation-item filter-transition drop-filter">
+      <li className="navigation-item ease-in-out duration-300 drop-filter">
         <NavLink to={"/contact"}>Contact</NavLink>
       </li>
     </>
@@ -27,8 +27,8 @@ const Navbar = () => {
   return (
 
     <>
-    <div className="px-17  navbar-gradient">
-      <div className="navbar  font-extrabold">
+    <div className="px-17 z-10 absolute h-48 w-full overflow-hidden navbar-gradient">
+      <div className="navbar font-extrabold">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -49,14 +49,11 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 rounded-box w-52 text-white bg-slate-700"
+              className="menu menu-md dropdown-content mt-3 z-[1] p-2 rounded-box w-52 text-white bg-slate-700"
             >
               {navLink}
             </ul>
           </div>
-          {/* <div>
-            <p>Hello</p>
-          </div> */}
           <div className="w-[30rem]">
             <video autoPlay muted loop >
               <source src={navbarLogoMP4} type="video/webm" />

@@ -1,5 +1,4 @@
 import bgVideo from '../../assets/BRB.webm';
-import './Banner.css';
 
 const Banner = () => {
     return (
@@ -21,6 +20,3 @@ const Banner = () => {
 };
 
 export default Banner;
-
-// text-fuchsia-300
-//hidden lg:block
