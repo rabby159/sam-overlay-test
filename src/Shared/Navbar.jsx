@@ -49,7 +49,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-md dropdown-content mt-3 z-[1] p-2 rounded-box w-52 text-white bg-slate-700"
+              className="menu menu-xs dropdown-content rounded-box text-white bg-slate-700"
             >
               {navLink}
             </ul>
@@ -64,9 +64,9 @@ const Navbar = () => {
           <ul className="flex gap-8 px-1 text-white">
             {navLink}
             </ul>
-          <div className="pl-3">
+          <div className="lg:pl-3">
             <p className="text-center text-white mb-3">Comms: <span className="text-red-600">Open!</span></p>
-            <a className="text-l bg-sky-400 p-3 rounded-md">Order Here</a>
+            <p className="text-l bg-sky-400 p-3 rounded-md">Order Here</p>
           </div>
         </div>
       </div>

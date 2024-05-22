@@ -4,7 +4,7 @@ const Banner = () => {
     return (
         <>
         
-        <div className='flex'>
+        <div className='grid grid-cols-1'>
             <div className=''>
                 <video autoPlay muted loop >
                     <source src={bgVideo} type='video/webm' />
