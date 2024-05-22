@@ -3,7 +3,7 @@ import logo from '../assets/logo.webm'
 const Footer = () => {
   return (
     <div className='bg-neutral'>
-      <footer className=" p-5 lg:p-10 text-neutral-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center">
+      <footer className="p-5 lg:p-10 text-neutral-content grid grid-cols-1 lg:grid-cols-3 justify-center">
         <nav>
           <header className="footer-title tracking-widest">Services</header>
           <ul>
@@ -15,7 +15,7 @@ const Footer = () => {
         </nav>
         <nav className='flex justify-center'>
               <div>
-                <div className='w-40 lg:w-[15rem] lg:ml-24'>
+                <div className='w-40 lg:w-[15rem] xl:ml-24'>
                   <video autoPlay muted loop >
                     <source src={logo} type="video/webm" />
                   </video>

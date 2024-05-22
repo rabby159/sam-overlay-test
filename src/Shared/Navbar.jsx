@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
 
     <>
-    <div className="px-17 z-10 absolute h-48 w-full overflow-hidden navbar-gradient">
+    <div className="z-10 absolute h-48 w-full overflow-hidden navbar-gradient">
       <div className="navbar font-extrabold">
         <div className="navbar-start">
           <div className="dropdown">
@@ -54,17 +54,17 @@ const Navbar = () => {
               {navLink}
             </ul>
           </div>
-          <div className="w-[30rem]">
+          <div className="w-[20rem] xl:w-[30rem]">
             <video autoPlay muted loop >
               <source src={navbarLogoMP4} type="video/webm" />
             </video>
           </div>
         </div>
         <div className="navbar-end hidden lg:flex uppercase">
-          <ul className="flex gap-8 px-1 text-white">
+          <ul className="flex gap-1 lg:gap-8 lg:px-1 text-white text-xl tracking-[.2rem] xl:tracking-[.4rem]">
             {navLink}
             </ul>
-          <div className="lg:pl-3">
+          <div className="lg:pl-3 hidden xl:block ">
             <p className="text-center text-white mb-3">Comms: <span className="text-red-600">Open!</span></p>
             <p className="text-l bg-sky-400 p-3 rounded-md">Order Here</p>
           </div>
