@@ -1,11 +1,5 @@
-
 .drop-filter:hover {
     filter: drop-shadow(0 0 12px #6e86f1) drop-shadow(0 0 24px #6e86f1);
-}
-
-.navigation-item {
-    /* letter-spacing: .4rem; */
-    cursor: pointer;
 }
 
 .navbar-gradient {

@@ -6,19 +6,19 @@ import './Navbar.css';
 const Navbar = () => {
   const navLink = (
     <>
-      <li className="navigation-item ease-in-out duration-300 drop-filter">
+      <li className="ease-in-out duration-300 drop-filter">
         <NavLink to={"/"}>Home</NavLink>
       </li>
-      <li className="navigation-item ease-in-out duration-300 drop-filter">
+      <li className="ease-in-out duration-300 drop-filter">
         <NavLink to={"/services"}>Services</NavLink>
       </li>
-      <li className="navigation-item ease-in-out duration-300 drop-filter">
+      <li className="ease-in-out duration-300 drop-filter">
         <NavLink to={"/portfolio"}>Portfolio</NavLink>
       </li>
-      <li className="navigation-item  ease-in-out duration-300 drop-filter">
+      <li className=" ease-in-out duration-300 drop-filter">
         <NavLink to={"/tos"}>Tos</NavLink>
       </li>
-      <li className="navigation-item ease-in-out duration-300 drop-filter">
+      <li className="ease-in-out duration-300 drop-filter">
         <NavLink to={"/contact"}>Contact</NavLink>
       </li>
     </>
@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
 
     <>
-    <div className="z-10 absolute h-48 w-full overflow-hidden navbar-gradient">
+    <div className="z-10 absolute h-24 md:h-48 w-full overflow-hidden navbar-gradient">
       <div className="navbar font-extrabold">
         <div className="navbar-start">
           <div className="dropdown">
@@ -61,7 +61,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="navbar-end hidden lg:flex uppercase">
-          <ul className="flex gap-1 lg:gap-8 lg:px-1 text-white text-xl tracking-[.2rem] xl:tracking-[.4rem]">
+          <ul className="flex gap-1 lg:gap-8 lg:px-1 text-white text-xl tracking-[.2rem] xl:tracking-[.4rem] cursor-pointer">
             {navLink}
             </ul>
           <div className="lg:pl-3 hidden xl:block ">
