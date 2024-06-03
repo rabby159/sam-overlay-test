@@ -1,10 +1,12 @@
-import Navbar from "../../Shared/Navbar";
 
 
 const Services = () => {
     return (
-        <div className="bg-slate-800">
-            <Navbar></Navbar>
+        <div className="bg-black">
+            <div className="">
+                <h2>Services</h2>
+                <p>Please note that final prices are base price plus 7% VAT.</p>
+            </div>
         </div>
     );
 };
