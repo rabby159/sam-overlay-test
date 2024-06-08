@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="z-10 absolute h-24 md:h-48 w-full overflow-hidden navbar-gradient">
+      <div className="absolute z-10 h-24 md:h-48 w-full overflow-hidden">
         <div className="navbar font-extrabold">
           <div className="navbar-start">
             <div className="dropdown">

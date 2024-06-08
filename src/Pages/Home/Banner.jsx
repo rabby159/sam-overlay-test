@@ -4,7 +4,7 @@ const Banner = () => {
     return (
         <>
         
-        <div className='flex'>
+        <div className='flex relative top-0'>
             <div className='w-auto'>
                 <video autoPlay muted loop >
                     <source src={bgVideo} type='video/webm' />
